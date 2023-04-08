@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChartJS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <nav class="nav">
+        <button id="bt_temp" onclick="active(this); showTemp();">Temperatura</button>
+        <button id="bt_umid" onclick="active(this); showUmid();">Umidade</button>
+        <button id="bt_todos" class="active" onclick="active(this); showAll();">Todos</button>
+
+    </nav>
+    <div class="container">
+        <div class="chart-container">
+            <canvas id="chart_line"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="chart_bar"></canvas>
+        </div>
+    </div>
+
+    <script src="js/charts.js"></script>
+</body>
+</html>
